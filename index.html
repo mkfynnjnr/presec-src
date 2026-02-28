@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -174,4 +175,182 @@
 
     <script src="script.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRESEC LEGON SRC - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo and School Name -->
+                <a href="index.html" class="logo-section">
+                    <div class="logo-circle">
+                        <span class="logo-letter">P</span>
+                    </div>
+                    <div class="logo-text">
+                        <h1 class="school-name">PRESEC LEGON</h1>
+                        <p class="school-subtitle">Student Representative Council</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="vote.html" class="nav-link">Vote</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="menu-icon">☰</span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileNav">
+                <a href="index.html" class="nav-link-mobile active">Home</a>
+                <a href="about.html" class="nav-link-mobile">About</a>
+                <a href="contact.html" class="nav-link-mobile">Contact</a>
+                <a href="vote.html" class="nav-link-mobile">Vote</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-slider">
+            <div class="slider-container">
+                <div class="slide active">
+                    <img src="images\schoolgate.jpg" alt="School Building">
+                    <div class="overlay"></div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1758936381581-f85b4d1da1fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Campus Aerial">
+                    <div class="overlay"></div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1625111380820-9a371d413cc4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Students Studying">
+                    <div class="overlay"></div>
+                </div>
+
+                <div class="hero-content">
+                    <div class="container">
+                        <h1 class="hero-title">Welcome to <span class="highlight">PRESEC LEGON</span> SRC</h1>
+                        <p class="hero-subtitle">Empowering Students, Building Leaders, Creating Excellence</p>
+                        <div class="hero-buttons">
+                            <a href="vote.html" class="btn btn-primary">Cast Your Vote</a>
+                            <a href="about.html" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="slider-btn slider-prev" onclick="changeSlide(-1)">‹</button>
+                <button class="slider-btn slider-next" onclick="changeSlide(1)">›</button>
+
+                <div class="slider-indicators">
+                    <span class="indicator active" onclick="goToSlide(0)"></span>
+                    <span class="indicator" onclick="goToSlide(1)"></span>
+                    <span class="indicator" onclick="goToSlide(2)"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest News -->
+        <section class="news-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Latest <span class="highlight">News & Updates</span></h2>
+                    <p class="section-subtitle">Stay informed about the latest happenings in our school community</p>
+                </div>
+
+                <div class="news-grid">
+                    <div class="news-card">
+                        <img src="images\vote.png" alt="SRC Elections">
+                        <div class="news-content">
+                            <p class="news-date">February 27, 2026</p>
+                            <h3 class="news-title">SRC Elections 2026 Announced</h3>
+                            <p class="news-description">The Student Representative Council announces the official election period for 2026 batch award categories. All students are encouraged to participate.</p>
+                        </div>
+                    </div>
+
+                    <div class="news-card">
+                        <img src="images\nsmq.png" alt="NSMQ Victory">
+                        <div class="news-content">
+                            <p class="news-date">October 30, 2023</p>
+                            <h3 class="news-title">PRESEC Wins National Science & Maths Quiz</h3>
+                            <p class="news-description">For the 8th time, PRESEC Legon has emerged victorious in NSMQ, defeating all competitors with exceptional performance.</p>
+                        </div>
+                    </div>
+
+                    <div class="news-card">
+                        <img src="images\boys listening.jpg" alt="Leadership Workshop">
+                        <div class="news-content">
+                            <p class="news-date">December 10, 2025</p>
+                            <h3 class="news-title">Leadership Workshop for Aspiring SRC Members</h3>
+                            <p class="news-description">The SRC organized a comprehensive leadership training workshop for students interested in taking up leadership roles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <h2 class="cta-title">Ready to Make Your Voice Heard?</h2>
+                <p class="cta-subtitle">Participate in the upcoming SRC elections and help shape the future of PRESEC Legon</p>
+                <a href="vote.html" class="btn btn-primary btn-large">Vote Now</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-title">PRESEC LEGON SRC</h3>
+                    <p class="footer-text">The SRC serves as the voice of all students, promoting excellence, leadership, and unity.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="vote.html">Vote</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>Presbyterian Boys' Secondary School</li>
+                        <li>P.O. Box LG 53, Legon, Accra</li>
+                        <li>Email: src@preseclegon.edu.gh</li>
+                        <li>Phone: +233 (0) 302 500 270</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 PRESEC LEGON SRC. All rights reserved.</p>
+                <p class="footer-motto"><span class="highlight">MONOVICIT QUI IUSTE LABORAT</span> - He Conquers Who Labours Justly</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+>>>>>>> cf3ab646cff4d855f8f6a080522e4502dfb0dce8
 </html>
