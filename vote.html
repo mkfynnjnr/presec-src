@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRESEC LEGON SRC - Vote</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo-section">
+                    <div class="logo-circle">
+                        <span class="logo-letter">P</span>
+                    </div>
+                    <div class="logo-text">
+                        <h1 class="school-name">PRESEC LEGON</h1>
+                        <p class="school-subtitle">Student Representative Council</p>
+                    </div>
+                </a>
+
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="vote.html" class="nav-link active">Vote</a>
+                </nav>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="menu-icon">☰</span>
+                </button>
+            </div>
+
+            <nav class="nav-mobile" id="mobileNav">
+                <a href="index.html" class="nav-link-mobile">Home</a>
+                <a href="about.html" class="nav-link-mobile">About</a>
+                <a href="contact.html" class="nav-link-mobile">Contact</a>
+                <a href="vote.html" class="nav-link-mobile active">Vote</a>
+            </nav>
+        </div>
+    </header>
+    <p> <b>How to vote</b></p>
+       <p>1. Dial *933*663# to purchase voting pass</p>
+       <p>2. Follow the prompts and buy desired number of votes</p>
+       <p>3. Check sms for the voting pass code</p>
+       <p>4. Input pass below</p>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+       <input type=>
+       <p>5. Select categories and click submit vote.</p>
+    <!-- Main Content -->
+    <main id="voteMain">
+        <!-- JavaScript will populate voting content here -->
+    </main>
+  
+
+<script>
+  // Grab the button
+  const submitBtn = document.getElementById('submit-btn');
+
+  // Disable the button completely
+  submitBtn.disabled = true;
+
+  // Optional: Prevent any click action, just in case
+  submitBtn.addEventListener('click', function(event) {
+    event.preventDefault(); // stops default behavior
+    alert("Voting is disabled. Pay to Vote"); // optional message
+  });
+</script>
+    
+       
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-title">PRESEC LEGON SRC</h3>
+                    <p class="footer-text">The Student Representative Council serves as the voice of all students, promoting excellence, leadership, and unity.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="vote.html">Vote</a></li>
+                    </ul>
+                </div>
+                <div>
+
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>Presbyterian Boys' Secondary School</li>
+                        <li>P.O. Box LG 53, Legon, Accra</li>
+                        <li>Email: src@preseclegon.edu.gh</li>
+                        <li>Phone: +233 (0) 302 500 270</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 PRESEC LEGON SRC. All rights reserved.</p>
+                <p class="footer-motto"><span class="highlight">MONOVICIT QUI IUSTE LABORAT</span> - He Conquers Who Labours Justly</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize mobile menu toggle (if not already loaded from script.js)
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileNav = document.getElementById('mobileNav');
+            
+            if (mobileMenuBtn && mobileNav) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    mobileNav.classList.toggle('active');
+                    const menuIcon = this.querySelector('.menu-icon');
+                    menuIcon.textContent = mobileNav.classList.contains('active') ? '✕' : '☰';
+                });
+            }
+
+            // Initialize vote page
+            if (window.location.pathname.includes('vote.html')) {
+                initVotePage();
+            }
+        });
+    </script>
+</body>
+</html>
