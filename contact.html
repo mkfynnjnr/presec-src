@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRESEC LEGON SRC - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo-section">
+                    <div class="logo-circle">
+                        <span class="logo-letter">P</span>
+                    </div>
+                    <div class="logo-text">
+                        <h1 class="school-name">PRESEC LEGON</h1>
+                        <p class="school-subtitle">Student Representative Council</p>
+                    </div>
+                </a>
+
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                    <a href="vote.html" class="nav-link">Vote</a>
+                </nav>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="menu-icon">☰</span>
+                </button>
+            </div>
+
+            <nav class="nav-mobile" id="mobileNav">
+                <a href="index.html" class="nav-link-mobile">Home</a>
+                <a href="about.html" class="nav-link-mobile">About</a>
+                <a href="contact.html" class="nav-link-mobile active">Contact</a>
+                <a href="vote.html" class="nav-link-mobile">Vote</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Contact <span class="highlight">Us</span></h1>
+                <p class="page-subtitle">Have questions or feedback? We'd love to hear from you!</p>
+            </div>
+        </section>
+
+        <!-- Contact Content -->
+        <section class="content-section white-bg">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info-section">
+                        <h2 class="section-title-left">Get in <span class="highlight">Touch</span></h2>
+                        
+                        <div class="contact-cards">
+                            <!-- Address -->
+                            <div class="contact-card">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-details">
+                                    <h3 class="contact-card-title">Our Address</h3>
+                                    <p class="contact-card-text">
+                                        Presbyterian Boys' Secondary School<br>
+                                        P.O. Box LG 53, Legon<br>
+                                        Accra, Ghana
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="contact-card">
+                                <div class="contact-icon">✉️</div>
+                                <div class="contact-details">
+                                    <h3 class="contact-card-title">Email Us</h3>
+                                    <p class="contact-card-text">
+                                        src@preseclegon.edu.gh<br>
+                                        info@preseclegon.edu.gh
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="contact-card">
+                                <div class="contact-icon">📞</div>
+                                <div class="contact-details">
+                                    <h3 class="contact-card-title">Call Us</h3>
+                                    <p class="contact-card-text">
+                                        +233 (0) 302 500 270<br>
+                                        +233 (0) 302 500 271
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Campus Image -->
+                        <div class="campus-image">
+                            <img src="https://images.unsplash.com/photo-1758936381581-f85b4d1da1fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBjYW1wdXMlMjBhZXJpYWx8ZW58MXx8fHwxNzcyMDQ5MTMyfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="PRESEC Campus">
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-section">
+                        <h2 class="form-title">Send us a <span class="highlight">Message</span></h2>
+
+                        <!-- Success Message (hidden by default) -->
+                        <div class="success-message" id="successMessage" style="display: none;">
+                            <p class="success-title">Thank you for your message!</p>
+                            <p class="success-text">We'll get back to you as soon as possible.</p>
+                        </div>
+
+                        <form id="contactForm" class="contact-form">
+                            <!-- Name Field -->
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Enter your full name" required>
+                            </div>
+
+                            <!-- Email Field -->
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required>
+                            </div>
+
+                            <!-- Message Field -->
+                            <div class="form-group">
+                                <label for="message" class="form-label">Your Message *</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="6" placeholder="Type your message here..." required></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span>✉</span> Send Message
+                            </button>
+
+                            <p class="form-note">* Required fields</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-title">PRESEC LEGON SRC</h3>
+                    <p class="footer-text">The Student Representative Council serves as the voice of all students, promoting excellence, leadership, and unity.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="vote.html">Vote</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>Presbyterian Boys' Secondary School</li>
+                        <li>P.O. Box LG 53, Legon, Accra</li>
+                        <li>Email: src@preseclegon.edu.gh</li>
+                        <li>Phone: +233 (0) 302 500 270</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 PRESEC LEGON SRC. All rights reserved.</p>
+                <p class="footer-motto"><span class="highlight">MONOVICIT QUI IUSTE LABORAT</span> - He Conquers Who Labours Justly</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
